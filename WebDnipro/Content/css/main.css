@@ -1,0 +1,530 @@
+/*
+
+    index
+
+*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans Condensed","Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: url(../Image/BgLogo/0_7c779_5df17311_orig.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    -moz-user-select: none;
+   -webkit-user-select: none;
+
+   /*
+     Introduced in IE 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+   -ms-user-select: none;
+   user-select: none;
+}
+
+
+
+
+.containet{
+    min-width: 1290px;
+}
+
+.main-cont {
+    width: 1495px;
+    margin: auto;
+}
+
+.links{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 153px;
+    text-transform: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.links:hover{
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+.header{
+    width: auto;
+} 
+
+.header .header-conrainer h1, h2, ul, .footer-container p {
+    text-align: center;
+}
+
+.header .header-conrainer h1{
+    padding: 0;
+    margin: 40px 0 20px;
+    text-shadow: 0 0 20px rgba(0,0,0,0.5);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 5em;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.header .header-conrainer h2{
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 0 40px;
+    text-shadow: 0 0 20px rgba(0,0,0,0.5);
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+
+.header .header-nav{
+    background-color: rgba(255,255,255,0.8);
+}
+
+.header .header-nav ul li, a{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    color: #423e3e;
+    text-transform: uppercase;
+}
+
+.header .header-nav a{
+    padding: 35px;
+    margin-left: -5px;
+    transition: all .2s ease-in-out;
+}
+
+
+.header .header-nav a:hover{
+    color: #0a0909;
+    text-shadow: 0 0 1px rgba(0,0,0,0.3);
+    transition: all .2s ease-in-out;
+}
+
+
+/*
+
+    main
+
+*/
+
+
+.main .main-welcome{
+    text-align: center;
+    background-color: rgba(255,255,255,0.9);
+    color: #423e3e;
+    margin: 40px 100px 40px;
+    padding: 20px;
+}
+
+.main-welcome p:first-child{
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.main-welcome h2{
+    margin: 0;
+    padding: 0 0 10px;
+    text-shadow: 0 0 4px rgba(0,0,0,0.4);
+    font-size: 4em;
+    font-weight: 600;
+    letter-spacing: .5px;
+    font-family: "Josefin Slab";
+    text-transform: capitalize;
+}
+
+.main-welcome .main-line{
+    max-width: 300px;
+}
+
+
+/*
+        main-products
+*/
+
+
+
+.main .main-products{
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+    color: #423e3e;
+    margin: 0 100px 40px;
+    padding: 20px;
+}
+
+.main .main-products hr{
+    width: 400px;
+}
+
+.products-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.products-card .card{
+   width: 440px;
+    background-color: #fff;
+    margin: 9px;
+    padding-bottom: 10px;
+}
+
+.products-card .card img{
+    width: 380px;
+}
+
+/*
+        main-products
+*/
+
+
+/*
+    main-products
+*/
+
+.main .products-other{
+    text-align: center;
+    background-color: rgba(255,255,255,0.9);
+    color: #423e3e;
+    margin: 0 100px 40px;
+    padding: 20px;
+}
+
+.main .products-other hr{
+    width: 400px;
+}
+
+
+.main .services{
+    display: flex;
+    justify-content: space-around;
+}
+
+.main .services img{
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 3px;
+    width: 300px;
+}
+
+.main .services p{
+    margin: 0;
+    text-align: justify;
+    padding: 10px;
+    font-size: .9em;
+    line-height: 1.9em;
+    color: #000;
+}
+
+/*
+    main-products
+*/
+
+
+/*
+
+    main
+
+*/
+
+
+
+
+/*
+
+    footer
+
+*/
+
+.footer {
+    width: auto;
+} 
+
+.footer .footer-container{
+    background-color: rgba(255,255,255,0.8);
+}
+
+.footer .footer-container p{
+    font-size: 1em;
+    padding: 40px;
+    color: #423e3e;
+    margin: 0;
+}
+
+/*
+
+    footer
+
+*/
+
+
+
+/*
+
+    index
+
+*/
+
+
+/*
+
+    details
+
+*/
+
+
+.main .details{
+    background-color: rgba(255,255,255,0.9);
+    color: #423e3e;
+    margin: 0 100px 40px;
+    padding: 30px;
+}
+
+.main .details hr{
+    width: 400px;
+}
+
+.main .details h2{
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.details-catal{
+    display: flex;
+    
+}
+
+.main .details .details-catal p{
+    text-align: left;
+    padding: 20px;
+}
+
+.main .details .details-catal img{
+    width: 500px;
+    height: 650px;
+    border: 1px solid #222;
+}
+
+.main .details .details-catal .links{
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 6px 80px;
+}
+
+
+/*
+
+    details
+
+*/
+
+
+
+
+/*
+
+    about
+
+*/
+
+
+.main .about{
+    text-align: center;
+    background-color: rgba(255,255,255,0.9);
+    color: #423e3e;
+    margin: 0 100px 40px;
+    padding: 30px;
+}
+
+.main .about hr{
+    width: 400px;
+}
+
+.main .about h2{
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.about .about-container{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.about .about-container img{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 3px;
+}
+.about .about-container p{
+    text-align: justify;
+    padding: 0 15px;
+    line-height: 1.6;
+    color: #000;
+    margin: 0;
+}
+
+.about .about-container p:first-child{
+    margin: 10px 0 5px;
+}
+
+
+/*
+
+    about
+
+*/
+
+
+/*
+
+    contact
+
+*/
+
+
+.main .contact{
+    text-align: center;
+    background-color: rgba(255,255,255,0.9);
+    color: #423e3e;
+    margin: 0 100px 40px;
+    padding: 30px;
+    text-transform: uppercase;    
+}
+
+.main .contact hr{
+    width: 400px;
+}
+
+.main .contact h2{
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.contact-cotainer .info{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-cotainer .info .l1{
+    width: 50%;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.contact-cotainer .info .l2{
+    width: 50%;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.l2 a{
+    color: darkblue;
+    font-weight: 700;
+}
+
+.l2 a:hover{
+    text-decoration: underline;
+}
+
+/*
+    
+    contact-form
+
+*/
+
+.main .contact-form{
+    text-align: center;
+    background-color: rgba(255,255,255,0.9);
+    color: #423e3e;
+    margin: 0 100px 40px;
+    padding: 30px;  
+}
+
+.main .contact-form hr{
+    width: 400px;
+}
+
+.main .contact-form h2{
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.main .contact-form p{
+    margin: 5px 0 20px;
+}
+
+/*
+    form
+*/
+
+.contact-cotainer-form{
+    padding: 20px;  
+    text-align: left;
+}
+
+.contact-cotainer-form .form-inputs{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.contact-cotainer-form .form-inputs input, textarea{
+    padding: 3px;
+    font-size: 1.1em;
+    margin: 9px;
+}
+
+.contact-cotainer-form .form-inputs input{
+    width: 270px;
+}
+
+.contact-cotainer-form .form-inputs label{
+    margin: 0 9px;
+}
+
+.form-inputs div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.contact-cotainer-form .links{
+    padding: 5px 25px;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+.text-danger {
+    color: red;
+    font-size: 12px;
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+}
+
+.valid-red{
+    color: red;
+}
+
+
+#skype{
+    margin-top: 12px;
+}
+
+.info-details {
+    margin-left: 20px;
+}
+/*
+
+    contact
+
+*/

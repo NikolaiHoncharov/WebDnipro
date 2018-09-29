@@ -1,0 +1,21 @@
+﻿@model WebDnipro.Models.Services
+
+@{
+    ViewBag.Title = $"Инфо о {Model.Title } - WebDnipro";
+}
+
+
+<div class="details">
+    <h2>@Model.Title</h2>
+    <hr>
+    <div class="details-catal">
+        <img src=@Model.linkImg width="500" height="650" alt="">
+        <div class="info-details">
+            <p>@Model.Description</p>
+            <hr>
+            @Html.ActionLink("На Главную", "Index", "Home", new { @class = "links" })
+            @*<a href="index.html" class="links">На Главную</a>*@
+        </div>
+    </div>
+</div>
+

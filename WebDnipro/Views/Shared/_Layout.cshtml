@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title </title>
+    <meta name="description" content="Web Dnipro Studio - студия разработки web-сайтов. Разработка сайтов под заказ и размещение в сети интернет, приобретение доменных имен и хостинга.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="WebDnipro - создание сайтов  быстро и не дорого">
+    <meta property="og:description" content="Web Dnipro Studio - студия разработки web-сайтов. Разработка сайтов под заказ и размещение в сети интернет, приобретение доменных имен и хостинга.">
+    <meta property="og:url" content="https://webdnipro.dp.ua">
+    <meta name="keywords" content="Web Dnipro, Web Dnipro Studio, разработка сайтов под заказ в Днепре, размещение в сети сайтов, создание сайтов под заказ Украина, лучшая веб-студия Днепра, создать web-сайт Днепр">
+    <link rel="icon" href="~/Content/image/BgLogo/Dn.png">
+    <link rel="stylesheet" href="~/Content/css/main.css">
+    <!--[if lt IE 9]>
+        <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-conrainer">
+            <div>
+                <h1>WebDnipro</h1>
+            </div>
+            <div>
+                <h2>Web Dnipto studio</h2>
+            </div>
+            <div class="header-nav">
+                <div class="nav">
+                    <nav>
+                        <ul>
+                            <li>@Html.ActionLink("Главная", "Index", "Home") @*<a href="index.html">Главная</a>*@</li>
+                            <li>@Html.ActionLink("О проекте", "About", "Home")@*<a href="about.html">О проекте</a>*@</li>
+                            <li>@Html.ActionLink("Контакты", "Contact", "Home")@*<a href="contact.html">Контакты</a>*@</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-cont">
+
+            @RenderBody();
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© Web-студия &#171;WebDnipro&#187;. Все права защищены, 2017-2018</p>
+        </div>
+    </footer>
+   
+</body>
+</html>

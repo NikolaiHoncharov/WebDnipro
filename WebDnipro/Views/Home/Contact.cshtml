@@ -1,0 +1,99 @@
+﻿@model WebDnipro.Models.MessageFrmUser
+@{
+    ViewBag.Title = "Контакты - WebDnipro - топ в создании сайтов подзаказ";
+}
+<div class="contact">
+    <hr>
+    <h2>КОНТАКТЫ <strong>WEB Dnipro</strong></h2>
+    <hr>
+    <div class="contact-cotainer">
+        <div class="info">
+            <div class="l1"><p>Контактное лицо</p></div>
+            <div class="l2"><p><strong>Николай</strong></p></div>
+        </div>
+        <div class="info">
+            <div class="l1"><p>Телефон</p></div>
+            <div class="l2"><p><strong>+38-095-189-70-35</strong></p></div>
+        </div>
+        <div class="info">
+            <div class="l1"><p>Skype</p></div>
+            <div class="l2"><p><strong>goncharov_nik1</strong></p></div>
+        </div>
+        <div class="info">
+            <div class="l1"><p>E-mail</p></div>
+            <div class="l2"><p><a href="mailto:Goncharov.nikolia@gmail.com">Отправить письмо</a></p></div>
+        </div>
+    </div>
+</div>
+
+<div class="contact-form">
+    <hr>
+    <h2>ОБРАТНАЯ СВЯЗЬ</h2>
+    <p>Не можете с нами свзяаться - отправьте нам сообщение и мы непременно ответим Вам</p>
+    <hr>
+    <div class="contact-cotainer-form">
+
+        @using (Html.BeginForm())
+        {
+            <div class="form-inputs">
+                <div>
+                    <label for="name">Ваше имя <sup class="valid-red">*</sup></label>
+                    @Html.TextBoxFor(model => model.FirstName, new { @id = "name" })
+                    @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+                    @*<input type="text" id="name" name="name">*@
+                </div>
+                <div>
+                    <label for="email">E-mail <sup class="valid-red">*</sup></label>
+                    @Html.TextBoxFor(model => model.Email, new { @id = "email" })
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                    @*<input type="email" id="email" name="email">*@
+                </div>
+                <div>
+                    <label for="skype">Skype </label>
+                    @Html.TextBoxFor(model => model.Skype, new { @id = "skype" })
+                    @Html.ValidationMessageFor(model => model.Skype, "", new { @class = "text-danger" })
+                    @*<input type="text" id="skype" name="skype">*@
+                </div>
+                <div>
+                    <label for="phone">Номер телефона <sup class="valid-red">*</sup></label>
+                    @Html.TextBoxFor(model => model.Phone, new { @id = "phone" })
+                    @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+                    @*<input type="number" id="phone" name="phone">*@
+                </div>
+                <div>
+                    <label for="message">Сообщение <sup class="valid-red">*</sup></label>
+                    @Html.TextAreaFor(model => model.Message, new { id = "message", @rows = "12", @cols = "144" })
+                    @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
+                    @*<textarea name="message" id="message" cols="144" rows="12"></textarea>*@
+                </div>
+            </div>
+            <input type="submit" value="Отправить" class="links">
+        }
+
+        @*<form action="" method="post">
+                <div class="form-inputs">
+                    <div>
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="skype">Skype</label>
+                        <input type="text" id="skype" name="skype">
+                    </div>
+                    <div>
+                        <label for="phone">Номер телефона</label>
+                        <input type="number" id="phone" name="phone">
+                    </div>
+                    <div>
+                        <label for="message">Сообщение</label>
+                        <textarea name="message" id="message" cols="144" rows="12"></textarea>
+                    </div>
+                </div>
+                <input type="submit" value="Отправить" class="links">
+            </form>*@
+    </div>
+</div>

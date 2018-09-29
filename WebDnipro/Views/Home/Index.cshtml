@@ -1,0 +1,47 @@
+﻿@model WebDnipro.Handlers.ServicesContainer
+
+
+@{
+    ViewBag.Title = " WebDnipro - топ в создании сайтов подзаказ";
+}
+
+<div class="main-welcome">
+    <p>Вас Приветствует</p>
+    <h2>Web Dnipto Studio</h2>
+    <hr class="main-line">
+    <p>Студия Разработки <strong>Web</strong>-Приложений</p>
+</div>
+<div class="main-products">
+    <hr>
+    <p>ИЗГОТОВЛЕНИЕ САЙТОВ</p>
+    <hr>
+    <div class="products-card">
+
+        @foreach (var srv in Model.services)
+        {
+            <div class="card">
+                <h3> @srv.Title </h3>
+                <img src=@srv.linkImg width="380" alt="">
+                <div>
+                    @Html.ActionLink("Подробнее", "Details", "Home", new { id = srv.ServicesId }, new { @class = "links" })
+                </div>
+            </div>
+        }
+    </div>
+</div>
+<div class="products-other">
+    <hr>
+    <p>ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</p>
+    <hr>
+    @foreach (var otherService in Model.otherServices)
+    {
+        <div>
+            <h4>@otherService.Title</h4>
+            <div class="services">
+                <img src=@otherService.LinkImg height="200" width="300" alt="">
+                <p>@otherService.Description</p>
+            </div>
+            <hr>
+        </div>
+    }
+</div>
